@@ -1,1 +1,1 @@
-# Isomorphic-Javascript-Practices
+# Universal-Javascript-Practices
