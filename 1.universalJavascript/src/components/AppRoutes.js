@@ -1,16 +1,11 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
-import Layout from './components/Layout';
-import IndexPage from './components/IndexPage';
-import AthletePage from './components/AthletePage';
-import NotFoundPage from './components/NotFoundPage';
+import { Router, browserHistory } from 'react-router';
+import routes from '../routes';
 
-const routes = (
-  <Route path="/" component={Layout}>
-    <IndexRoute component={IndexPage}/>
-    <Route path="athlete/:id" component={AthletePage}/>
-    <Route path="*" component={NotFoundPage}/>
-  </Route>
-);
-
-export default routes;
+export default class AppRoutes extends React.Component {
+  render() {
+    return (
+      <Router history={browserHistory} routes={routes} onUpdate={() => window.scrollTo(0, 0)}/>
+    );
+  }
+}
