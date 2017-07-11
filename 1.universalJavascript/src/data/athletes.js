@@ -29,7 +29,7 @@ const athletes = [
     ],
   },
   {
-  	'id': 'mark-huizinga',
+    'id': 'mark-huizinga',
     'name': 'Mark Huizinga',
     'country': 'nl',
     'birth': '1973',
